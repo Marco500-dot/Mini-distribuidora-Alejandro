@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Distribuidora de Pan y Postres Ale</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+            background: #f4f4f4;
             color: #333;
         }
         header {
-            background: url('images/header-bg.jpg') no-repeat center center / cover;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
             color: white;
             text-align: center;
             padding: 50px 10%;
@@ -28,53 +27,17 @@
             font-size: 1.2em;
             margin: 10px 0 0;
         }
-        header nav {
-            margin-top: 20px;
-        }
-        header nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.2em;
-            margin: 0 15px;
-            padding: 10px 20px;
-            border: 2px solid white;
-            border-radius: 5px;
-            transition: background 0.3s, color 0.3s;
-        }
-        header nav a:hover {
-            background: white;
-            color: #2c2c54;
-        }
-        .content {
+        main {
             padding: 20px 10%;
         }
-        .content h2 {
-            color: #2c2c54;
-            margin-top: 30px;
+        main h2 {
+            color: #2575fc;
             text-align: center;
         }
-        .content p {
+        main p {
             text-align: center;
-            line-height: 1.6;
             font-size: 1.1em;
-        }
-        .images {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
-            gap: 20px;
-        }
-        .images img {
-            width: 300px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .images img:hover {
-            transform: scale(1.05);
+            line-height: 1.6;
         }
         .contact-btn {
             display: inline-block;
@@ -95,49 +58,24 @@
             transform: translateY(-3px);
         }
         footer {
-            background: #2c2c54;
+            background: #333;
             color: white;
             text-align: center;
             padding: 15px 0;
-            font-size: 0.9em;
-            margin-top: 50px;
-        }
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
-            header p {
-                font-size: 1em;
-            }
-            header nav a {
-                font-size: 1em;
-                margin: 5px 10px;
-            }
-            .images img {
-                width: 100%;
-                max-width: 300px;
-                height: auto;
-            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Mini Distribuidora de Pan y Postres "Alex"</h1>
+        <h1>Mini Distribuidora de Pan y Postres "Ale"</h1>
         <p>¡Las mejores opciones de pan y postres para tu negocio!</p>
-        <nav>
-            <a href="#about">Sobre Nosotros</a>
-            <a href="#products">Productos</a>
-            <a href="#contact">Contacto</a>
-        </nav>
     </header>
-    <main class="content">
-        <section id="about">
-            <h2>Sobre Nosotros</h2>
-            <p>
-                Somos una distribuidora enfocada en ofrecer panes y postres a negocios locales. Nuestra meta es simplificar tu acceso a productos deliciosos y frescos para emprender o expandir tu negocio.
-            </p>
-            <h2>¿Cómo funcionan los pedidos?</h2>
+    <main>
+        <h2>Sobre Nosotros</h2>
+        <p>
+            Somos una distribuidora enfocada en ofrecer panes y postres a negocios locales. Nuestra meta es simplificar tu acceso a productos deliciosos y frescos para emprender o expandir tu negocio.
+        </p>
+        <h2>¿Cómo funcionan los pedidos?</h2>
         <p>
             Puedes realizar un pedido a través de nuestro botón que te envia a nuestro contacto por medio de WhatsApp, 
             esto va de acuerdo a nuestros horarios correspondientes (Lunes a Viernes) para facilitar las entregas los días 
@@ -155,27 +93,12 @@
             <p>
             Viernes: 2:00 PM a 8:30 PM
             </p>
-        </section>
-        <section id="products">
-            <h2>Productos</h2>
-            <div class="images">
-                <img src="images/pan.png" alt="Pan recién horneado">
-                <img src="images/logo.png" alt="Logo Mini Distribuidora">
-                <img src="images/gelatinas.png" alt="Gelatinas coloridas">
-            </div>
-        </section>
-        <section id="contact">
-            <h2>Contacto</h2>
-            <p>
-                ¿Tienes dudas o deseas realizar un pedido? ¡Contáctanos ahora mismo a través de WhatsApp!
-            </p>
-            <a href="https://wa.me/527299421446" class="contact-btn">
-                <i class="fab fa-whatsapp"></i> Realizar Pedido
-            </a>
-        </section>
+        <a href="https://wa.me/527299421446" class="contact-btn">
+            Realizar Pedido
+        </a>
     </main>
     <footer>
-        &copy; 2024 Mini Distribuidora de Pan y Postres "Alex". Todos los derechos reservados.
+        &copy; 2024 Mini Distribuidora de Pan y Postres "Ale". Todos los derechos reservados.
     </footer>
 </body>
 </html>
