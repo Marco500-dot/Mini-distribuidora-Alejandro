@@ -1,41 +1,46 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mini Distribuidora de Pan y Postres Alex</title>
+    <title>Mini Distribuidora de Pan y Postres Ale</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f8f9fa;
             color: #333;
+            overflow-x: hidden;
         }
         header {
-            background-color: #2c2c54;
+            background-color: #6a4f4b;
             color: white;
-            padding: 20px 10%;
+            padding: 30px 10%;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2.8em;
+            animation: fadeIn 1.5s ease-out;
         }
         header p {
-            margin: 5px 0 0;
+            margin: 10px 0 0;
             font-size: 1.2em;
+            animation: fadeIn 2s ease-out;
         }
         .content {
             padding: 20px 10%;
             background-color: white;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
         }
         .content h2 {
-            color: #2c2c54;
+            color: #6a4f4b;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .content p {
+            line-height: 1.8;
         }
         .images {
             display: flex;
@@ -46,36 +51,53 @@
         .images img {
             width: 30%;
             margin: 10px 0;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+            transform: scale(0.95);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .images img:hover {
+            transform: scale(1);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
         }
         .contact-btn {
             display: block;
-            margin: 20px auto;
-            padding: 10px 20px;
-            background-color: #6a4f4b;
+            margin: 30px auto;
+            padding: 15px 25px;
+            background-color: #8e6b65;
             color: white;
             text-align: center;
             font-size: 1.2em;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             text-decoration: none;
-            width: 200px;
+            width: 220px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
         .contact-btn:hover {
-            background-color: #8e6b65;
+            background-color: #6a4f4b;
+            transform: translateY(-3px);
             cursor: pointer;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px 0;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            padding: 15px 0;
+        }
+        /* Animaciones */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -85,8 +107,7 @@
     <main class="content">
         <h2>Sobre nosotros</h2>
         <p>
-            Somos una distribuidora enfocada en ofrecer panes y postres a negocios locales en la zona de San Pablo de la Salinas (Tultitlán, Estado de México).
-            Nuestra meta es simplificar 
+            Somos una distribuidora enfocada en ofrecer panes y postres a negocios locales. Nuestra meta es simplificar 
             tu acceso a productos que necesitas para emprender o expandir tu negocio.
         </p>
         <h2>¿Cómo te ayudamos?</h2>
@@ -95,39 +116,14 @@
             se adapten a tus necesidades. Creemos en apoyar a los emprendedores, brindándoles opciones que les permitan 
             crecer en el mercado.
         </p>
-        <h2>¿Cómo funcionan los pedidos?</h2>
-        <p>
-            Puedes realizar un pedido a través de nuestro botón que te envia a nuestro contacto por medio de WhatsApp, 
-            esto va de acuerdo a nuestros horarios correspondientes (Lunes a Viernes) para facilitar las entregas los días 
-            (Sábado y Domingo.)
-        </p>
-        <h2>Horarios de atención</h2>
-        <p>
-            Lunes: 2:00 PM a 8:30 PM
-            <p>
-            Martes: 2:00 PM a 8:30 PM
-            <p>
-            Miércoles: 2:00 PM a 8:30 PM
-            <p>
-            Jueves: 2:00 PM a 8:30 PM
-            <p>
-            Viernes: 2:00 PM a 8:30 PM
-        </p>
         <div class="images">
-<img src="images/pan.png" alt="Pan recién horneado">
+            <img src="images/pan.png" alt="Pan recién horneado">
             <img src="images/logo.png" alt="Logo Mini Distribuidora">
-<img src="images/gelatinas.png" alt="Gelatinas coloridas">
-    </div>
-        <!-- Botón para enviar mensaje por WhatsApp -->
-        <a 
-            href="https://wa.me/525535294466?text=¡Hola!%20Quisiera%20hacer%20un%20pedido%20de%20pan%20y%20postres.%20¿Podrías%20ayudarme?"
-            class="contact-btn"
-            target="_blank">
-            Enviar mensaje a WhatsApp
-        </a>
+            <img src="images/gelatinas.png" alt="Gelatinas coloridas">
+        </div>
+        <a href="https://wa.me/527299421446?text=Hola,%20quiero%20hacer%20un%20pedido!" class="contact-btn">Realizar Pedido</a>
     </main>
     <footer>
-        
         &copy; 2024 Mini Distribuidora de Pan y Postres "Alex". Todos los derechos reservados.
     </footer>
 </body>
